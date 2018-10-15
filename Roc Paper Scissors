@@ -1,0 +1,28 @@
+player_1 = input("Please enter either rock, paper or scissors\n")
+player_2 = input("Please enter either rock, paper or scissors\n")
+
+game = ["rock", "paper", "scissors"]
+
+if player_1 not in game:
+    print  ("PLAYER 1 YOU HAVE NOT ENTER A VALID INPUT - GAME OVER")
+
+elif player_1 not in game:
+    print ("PLAYER 2 YOU HAVE NOT ENTER A VALID INPUT - GAME OVER")
+
+else:
+
+
+    if player_1 == "rock" and player_2 == "scissors":
+        print("player 1 wins")
+
+    elif player_1 == "paper" and player_2 == "rock":
+        print("player 1 wins")
+
+    elif player_1 == "scissors" and player_2 == "paper":
+        print("player 1 wins")
+
+    elif player_1 == player_2:
+        print("It's a Draw")
+
+    else:
+        print("player 2 wins")
